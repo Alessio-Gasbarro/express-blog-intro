@@ -50,3 +50,8 @@ const dolciblog = [
         tags: ["Tag1", "Tag2", "Tag3"],
     },
 ];
+
+//Array "dolciblog" postato in Post>3000/catalogo
+app.post("/catalogo", (req, res) => {
+    res.send(dolciblog);
+});
